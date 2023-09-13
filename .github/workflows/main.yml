@@ -1,0 +1,26 @@
+## Get this file from your deployment page at clodu.cbh.kth.se
+## Either, paste the entire file or copy the parts you need
+
+## Ensure the username and password are not public, you can use secrets for this or keep the github repo private
+
+
+name: kthcloud-ci
+"on":
+  push:
+    branches:
+    - main
+jobs:
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Login to Docker Hub
+      uses: docker/login-action@v2
+      with:
+        registry: registry.cloud.cbh.kth.se
+        username: # PASTE THE USERNAME HERE
+        password: # PASTE THE PASSWORD HERE
+    - name: Build and push
+      uses: docker/build-push-action@v3
+      with:
+        push: true
+        tags: # PASTE YOUR TAG HERE
