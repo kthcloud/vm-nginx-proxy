@@ -8,10 +8,9 @@ This is a template for setting up a nginx proxy for kthcloud VMs.
 - Create a vm at [cloud.cbh.kth.se](https://cloud.cbh.kth.se/create)
 - Fork this repo
 - Change the URL and VM public ports in nginx.conf
-- Change the .github/workflows/main.yml file to the one you get from the deployment at cloud.cbh.kth.se
+- Change the .github/workflows/main.yml file to the one you get from the deployment at [cloud.cbh.kth.se](https://cloud.cbh.kth.se/)
 - Commit and push to github
-- ??? Magic ??? (Please allow some minutes for our wizards to do their work)
-- Profit
+- GitHub Actions builds and pushes your code (Please allow some minutes, you can see progress under Actions in your repo)
 - Visit your deployment's public url
 
 
