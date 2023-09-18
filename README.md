@@ -1,13 +1,13 @@
 # vm-nginx-proxy
 
-Example vm proxy for kthcloud using nginx
+This is a template for setting up a nginx proxy for kthcloud VMs.
 
 ## How to use
 
-- Create deployment at cloud.cbh.kth.se
-- Create a vm at cloud.cbh.kth.se
+- Create deployment at [cloud.cbh.kth.se](https://cloud.cbh.kth.se/create)
+- Create a vm at [cloud.cbh.kth.se](https://cloud.cbh.kth.se/create)
 - Fork this repo
-- Change the URL, VM IP address and VM public ports in nginx.conf
+- Change the URL and VM public ports in nginx.conf
 - Change the .github/workflows/main.yml file to the one you get from the deployment at cloud.cbh.kth.se
 - Commit and push to github
 - ??? Magic ??? (Please allow some minutes for our wizards to do their work)
